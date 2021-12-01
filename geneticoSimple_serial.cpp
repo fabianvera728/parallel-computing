@@ -864,8 +864,8 @@ int main(int argc, char **argv)
 
 	// Declaracion variables - par�metros del algoritmo
 	int nCiudades = 29;			 // nodos del grafo
-	int tamPoblacion = 4000; // tama�o de la poblaci�n
-	int numMaxGen = 2500;
+	int tamPoblacion = 40000; // tama�o de la poblaci�n
+	int numMaxGen = 25000;
 	
 	int nHilos = thread_num;
 	// printf("Numero de hilos: %d\n", nHilos);
@@ -941,7 +941,6 @@ int main(int argc, char **argv)
   float losc = longitudCircuito(mejorCaminoTour, matrizDistancias, nCiudades);
 	printf("TSPLib long best tour : %.2f \n", losc); 
 	printf("Error : %.2f \n", (abs(distancias[posMejor]-losc)/losc)*100); 
-
 
 	// printf("Tiempo de ejecucion: %f\n", t);          
 

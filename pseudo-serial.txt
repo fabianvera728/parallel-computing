@@ -1,0 +1,11 @@
+INICIO
+  poblacionInicial = generarPoblacionInicial()
+  evaluacionPoblacionInicial()
+
+  PARA g hasta generaciones HACER
+    seleccion()
+    reproduccion()
+    mutacion()
+    evaluacion()
+  FIN PARA Generaciones
+FIN
